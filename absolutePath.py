@@ -16,8 +16,6 @@ def absoluteReturnsMetadata(path):
     dt_ctime = datetime.datetime.fromtimestamp(os.stat(path).st_ctime)
     dt_mtime = datetime.datetime.fromtimestamp(os.stat(path).st_mtime)
     dt_atime = datetime.datetime.fromtimestamp(os.stat(path).st_atime)
-    # Ejemplo de como acceder a alguno de los elemento del metadoto del archivo
-    # print("El ultimo acceso al directorio fue: " + str(os.stat(path).st_ctime))
     print("El ultimo acceso al directorio fue: " + str(dt_ctime))
     print("La modificación más reciente fue: " + str(dt_mtime))
     print("La acceso más reciente fue: " + str(dt_atime))
